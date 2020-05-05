@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="google-appengine-python" name="Google App Engine (Python)">
       <configuration>
-        <option name="rootFolder" value="C:\Users\USUARIO\Desktop\proyecto-als" />
+        <option name="rootFolder" value="C:\Users\USUARIO\Desktop\als\proyecto-als" />
         <option name="sdkFolder" value="C:\Users\USUARIO\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine" />
       </configuration>
     </facet>

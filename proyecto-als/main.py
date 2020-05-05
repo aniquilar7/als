@@ -15,12 +15,21 @@
 # limitations under the License.
 #
 import webapp2
+from webapp2_extras import jinja2
 
+from model.chat import Chat
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        chats = Chat.query().order(-Chat.id)
 
+        valores_plantilla = {
+            "chats": chats
+        }
+
+        jinja = jinja2.get_jinja2(app=self.app)
+        self.response.write(jinja.render_template("index.html"),
+                            **valores_plantilla)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
