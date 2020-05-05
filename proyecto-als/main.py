@@ -21,7 +21,7 @@ from model.chat import Chat
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        chats = Chat.query().order(-Chat.id)
+        chats = Chat.query().order(-Chat.usuario1)
 
         valores_plantilla = {
             "chats": chats
