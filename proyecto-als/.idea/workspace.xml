@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0c79da-8294-4bde-999a-b22b6dd5f829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/mensajes/nuevo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/nuevo_mensaje.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/mensajes/elimina.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/chats/nuevo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/chats/nuevo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/mensajes/lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/mensajes/lista.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/chats/elimina.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/chats/elimina.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/mensaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mensaje.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lista_mensajes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_mensajes.html" afterDir="false" />
     </list>
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,7 +79,7 @@
       <workItem from="1588676390422" duration="646000" />
       <workItem from="1588760743786" duration="2934000" />
       <workItem from="1588763757081" duration="1575000" />
-      <workItem from="1588779549158" duration="5466000" />
+      <workItem from="1588779549158" duration="6424000" />
     </task>
     <servers />
   </component>

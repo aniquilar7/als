@@ -1,5 +1,5 @@
 #coding: utf-8
-#Nuevo chat
+#Elimina chat
 
 
 import webapp2

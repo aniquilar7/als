@@ -5,7 +5,7 @@
 
 {% if mensajes.count() > 0 %}
      {% for mensaje in mensajes %}
-        <a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}"> Elimina mensaje</a>
+        <a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}&amp;chat={{ chat.key.urlsafe() }}"> Elimina mensaje</a>
         {% include "entrada_mensaje.html" %}
     {% endfor %}
 {% else %}

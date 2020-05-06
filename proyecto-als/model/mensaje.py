@@ -24,3 +24,12 @@ class Mensaje(ndb.Model):
             return (clave_chat.get(), mensajes)
         else:
             print ("ERROR: chat no encontrado")
+
+    @staticmethod
+    def recupera(req):
+        try:
+            id = req.GET["id"]
+        except KeyError:
+            id = ""
+
+        return ndb.Key(urlsafe=id).get()

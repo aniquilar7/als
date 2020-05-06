@@ -18,6 +18,9 @@ handlers:
 - url: /chats/elimina
   script: handlers.chats.elimina.app
 
+- url: /mensajes/elimina
+  script: handlers.mensajes.elimina.app
+
 - url: /mensajes/lista
   script: handlers.mensajes.lista.app
 
