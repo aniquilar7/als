@@ -15,6 +15,9 @@ handlers:
 - url: /chats/nuevo
   script: handlers.chats.nuevo.app
 
+- url: /chats/elimina
+  script: handlers.chats.elimina.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"
