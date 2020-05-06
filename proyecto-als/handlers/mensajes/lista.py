@@ -5,10 +5,11 @@ from model.mensaje import Mensaje
 
 class ListaMensajesHandler(webapp2.RequestHandler):
     def get(self):
-        mensajes = Mensaje.recupera_para(self.request)
+        chat, mensajes = Mensaje.recupera_para(self.request)
 
         valores_plantilla = {
-            "mensajes": mensajes
+            "mensajes": mensajes,
+            "chat": chat
         }
 
         jinja = jinja2.get_jinja2(app=self.app)

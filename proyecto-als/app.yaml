@@ -21,6 +21,9 @@ handlers:
 - url: /mensajes/lista
   script: handlers.mensajes.lista.app
 
+- url: /mensajes/nuevo
+  script: handlers.mensajes.nuevo.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"

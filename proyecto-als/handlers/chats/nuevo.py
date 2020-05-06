@@ -13,12 +13,9 @@ from model.chat import Chat
 class NuevoChatHandler(webapp2.RequestHandler):
     def get(self):
 
-        valores_plantilla = {
-        }
 
         jinja = jinja2.get_jinja2(app=self.app)
-        self.response.write(jinja.render_template("nuevo_chat.html",
-                            **valores_plantilla))
+        self.response.write(jinja.render_template("nuevo_chat.html"))
 
     def post(self):
         usuario = self.request.get("edUsuario", "")
