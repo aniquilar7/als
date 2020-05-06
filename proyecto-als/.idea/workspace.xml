@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0c79da-8294-4bde-999a-b22b6dd5f829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nuevo_chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/chats/nuevo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/chats/nuevo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\Desktop\als\proyecto-als\handlers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="proyecto-als" type="Python.AppEngineServer" factoryName="App Engine server">
@@ -69,7 +73,7 @@
       <workItem from="1588414234979" duration="83000" />
       <workItem from="1588674170818" duration="2179000" />
       <workItem from="1588676390422" duration="646000" />
-      <workItem from="1588760743786" duration="245000" />
+      <workItem from="1588760743786" duration="1592000" />
     </task>
     <servers />
   </component>

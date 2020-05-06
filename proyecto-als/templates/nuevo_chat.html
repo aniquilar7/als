@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALS-App: Nuevo chat</title>
+
+    <script>
+        function check(){
+            return document.getElementById("edUsuario").value.trim().length > 0;
+        }
+    </script>
+</head>
+<body>
+    <h1>Nuevo chat</h1>
+    <form id="frmNuevoChat" methos="post" action="/chats/nuevo" onsubmit="return check()">
+        <label for="edUsuario">Indica el nombre del otro usuario: </label>
+        <input type="text" id="edUsuario" name="edUsuario"/>
+
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>

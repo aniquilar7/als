@@ -12,6 +12,9 @@ handlers:
 - url: /
   script: handlers.main.app
 
+- url: /chats/nuevo
+  script: handlers.chats.nuevo.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"
