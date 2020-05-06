@@ -1,0 +1,15 @@
+{% extends "esqueleto.html" %}
+
+{% block contenido %}
+<h1>Mensajes</h1>
+{% if mensajes.count() > 0 %}
+     {% for mensaje in mensajes %}
+        <a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}"> Elimina mensaje</a>
+        {% include "entrada_mensaje.html" %}
+    {% endfor %}
+{% else %}
+    <p><b>Este chat está vacío.</b></p>
+{% endif %}
+
+<a href="/mensajes/nuevo">Nuevo mensaje</a>
+{% endblock %}

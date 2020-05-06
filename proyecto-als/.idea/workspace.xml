@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0c79da-8294-4bde-999a-b22b6dd5f829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/chats/elimina.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/mensajes/lista.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/entrada_mensaje.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lista_mensajes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/mensaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mensaje.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,9 +36,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\Desktop\als\proyecto-als\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USUARIO\Desktop\als\proyecto-als\handlers" />
     </key>
@@ -73,7 +79,8 @@
       <workItem from="1588674170818" duration="2179000" />
       <workItem from="1588676390422" duration="646000" />
       <workItem from="1588760743786" duration="2934000" />
-      <workItem from="1588763757081" duration="1373000" />
+      <workItem from="1588763757081" duration="1575000" />
+      <workItem from="1588779549158" duration="2241000" />
     </task>
     <servers />
   </component>
@@ -85,24 +92,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588763613496" />
-    <state width="456" height="279" key="GridCell.Tab.0.bottom" timestamp="1588763766903">
+    <state width="914" height="177" key="GridCell.Tab.0.bottom" timestamp="1588765332630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588763766903" />
-    <state width="456" height="279" key="GridCell.Tab.0.center" timestamp="1588763766903">
+    <state width="914" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588765332630" />
+    <state width="914" height="177" key="GridCell.Tab.0.center" timestamp="1588765332630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588763766903" />
-    <state width="456" height="279" key="GridCell.Tab.0.left" timestamp="1588763766903">
+    <state width="914" height="177" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588765332630" />
+    <state width="914" height="177" key="GridCell.Tab.0.left" timestamp="1588765332630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588763766903" />
-    <state width="456" height="279" key="GridCell.Tab.0.right" timestamp="1588763766903">
+    <state width="914" height="177" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588765332630" />
+    <state width="914" height="177" key="GridCell.Tab.0.right" timestamp="1588765332630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588763766903" />
+    <state width="914" height="177" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588765332630" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/proyecto_als$proyecto_als.coverage" NAME="proyecto-als Coverage Results" MODIFIED="1588765279330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/proyecto_als$proyecto_als.coverage" NAME="proyecto-als Coverage Results" MODIFIED="1588780195130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

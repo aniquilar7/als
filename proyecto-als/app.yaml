@@ -18,6 +18,9 @@ handlers:
 - url: /chats/elimina
   script: handlers.chats.elimina.app
 
+- url: /mensajes/lista
+  script: handlers.mensajes.lista.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"
