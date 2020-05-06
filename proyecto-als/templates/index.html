@@ -5,11 +5,12 @@
     <title>ALS-App</title>
 </head>
 <body>
+    <h1>Chats</h1>
     {% if chats.count() > 0 %}
          {% for chat in chats %}
             <a href="/mensajes/list?id={{ chat.key.urlsafe() }}">Ver chat</a>
             <a href="/chat/elimina?id={{ chat.key.urlsafe() }}"> Elimina chat</a>
-            <b>{{ chat.usuario1 }} - {{ chat.usuario2 }}</b>
+            <b>{{ chat.usuario1 }} - {{ chat.usuario2 }}</b></br>
         {% endfor %}
     {% else %}
         <p><b>No existen chats actualmente.</b></p>

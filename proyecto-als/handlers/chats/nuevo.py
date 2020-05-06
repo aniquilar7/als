@@ -3,7 +3,7 @@
 
 
 import webapp2
-
+import time
 
 from webapp2_extras import jinja2
 
@@ -21,7 +21,15 @@ class NuevoChatHandler(webapp2.RequestHandler):
                             **valores_plantilla))
 
     def post(self):
-        self.respone.write("Nuevo chat creado")
+        usuario = self.request.get("edUsuario", "")
+
+        if not(usuario):
+            return self.redirect("/")
+        else:
+            chat = Chat(usuario1="Yo", usuario2=usuario)
+            chat.put()
+            time.sleep(1)
+            return self.redirect("/")
 
 app = webapp2.WSGIApplication([
     ('/chats/nuevo', NuevoChatHandler)
