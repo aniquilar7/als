@@ -21,7 +21,7 @@ class Mensaje(ndb.Model):
 
         if id_chat:
             clave_chat = ndb.Key(urlsafe=id_chat)
-            mensajes = Mensaje.query(Mensaje.clave_chat == clave_chat).order(-Mensaje.fecha)
+            mensajes = Mensaje.query(Mensaje.clave_chat == clave_chat).order(Mensaje.fecha)
             return (clave_chat.get(), mensajes)
         else:
             print ("ERROR: chat no encontrado")

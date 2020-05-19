@@ -12,15 +12,6 @@ from webapp2_extras.users import users
 from model.mensaje import Mensaje
 
 class NuevoMensajeHandler(webapp2.RequestHandler):
-    def get(self):
-        valores_plantilla = {
-            "chat": self.request.GET["chat"]
-        }
-
-        jinja = jinja2.get_jinja2(app=self.app)
-        self.response.write(jinja.render_template("nuevo_mensaje.html",
-                                                  **valores_plantilla))
-
     def post(self):
         mensaje = self.request.get("edMensaje", "")
         clave_chat = self.request.GET["chat"]

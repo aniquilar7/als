@@ -21,6 +21,8 @@ class ListaMensajesHandler(webapp2.RequestHandler):
             usr = chat.usuario2
         elif chat.usuario2 == users.get_current_user().email():
             usr = chat.usuario1
+        else:
+            return self.redirect("/inicio")
 
         valores_plantilla = {
             "mensajes": mensajes,

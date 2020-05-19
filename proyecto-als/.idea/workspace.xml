@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0c79da-8294-4bde-999a-b22b6dd5f829" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/mensajes/lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/mensajes/lista.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/mensajes/nuevo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/mensajes/nuevo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/index.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/mensaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mensaje.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_mensajes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_mensajes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nuevo_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nuevo_chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nuevo_mensaje.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +87,7 @@
       <workItem from="1589042200559" duration="600000" />
       <workItem from="1589271114367" duration="13000" />
       <workItem from="1589880477988" duration="5972000" />
-      <workItem from="1589892189692" duration="555000" />
+      <workItem from="1589892189692" duration="1517000" />
     </task>
     <servers />
   </component>
@@ -92,22 +99,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588763613496" />
-    <state width="1877" height="189" key="GridCell.Tab.0.bottom" timestamp="1589886472557">
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom" timestamp="1589893131117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589886472557" />
-    <state width="1877" height="189" key="GridCell.Tab.0.center" timestamp="1589886472557">
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589893131117" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center" timestamp="1589893131117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589886472557" />
-    <state width="1877" height="189" key="GridCell.Tab.0.left" timestamp="1589886472557">
+    <state width="1877" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589893131117" />
+    <state width="1877" height="189" key="GridCell.Tab.0.left" timestamp="1589893131117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589886472557" />
-    <state width="1877" height="189" key="GridCell.Tab.0.right" timestamp="1589886472557">
+    <state width="1877" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589893131117" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right" timestamp="1589893131117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589886472557" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589893131117" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/proyecto_als$proyecto_als.coverage" NAME="proyecto-als Coverage Results" MODIFIED="1589892730112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

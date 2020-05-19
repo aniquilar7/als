@@ -20,4 +20,9 @@ indexes:
   properties:
   - name: clave_chat
   - name: fecha
+
+- kind: Mensaje
+  properties:
+  - name: clave_chat
+  - name: fecha
     direction: desc

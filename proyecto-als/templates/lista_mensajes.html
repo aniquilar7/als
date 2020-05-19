@@ -13,5 +13,17 @@
     <p><b>Este chat está vacío.</b></p>
 {% endif %}
 
-<a href="/mensajes/nuevo?chat={{ chat.key.urlsafe() }}">Nuevo mensaje</a>
+<form id="frmNuevoMensaje" method="post" action="/mensajes/nuevo?chat={{ chat.key.urlsafe() }}" onsubmit="return check()">
+    <label for="edMensaje"></label>
+    <input type="text" id="edMensaje" name="edMensaje" placeholder="Escriba aquí"/>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+    function check(){
+        return document.getElementById("edMensaje").value.trim().length > 0;
+    }
+</script>
+
 {% endblock %}
