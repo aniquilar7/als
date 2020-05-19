@@ -10,6 +10,12 @@ indexes:
 # automatically uploaded to the admin console when you next deploy
 # your application using appcfg.py.
 
+- kind: Chat
+  properties:
+  - name: usuario2
+  - name: usuario1
+    direction: desc
+
 - kind: Mensaje
   properties:
   - name: clave_chat

@@ -17,6 +17,7 @@
 import webapp2
 from webapp2_extras import jinja2
 from webapp2_extras.users import users
+from google.appengine.ext import ndb
 
 from model.chat import Chat
 
@@ -26,7 +27,7 @@ class InicioHandler(webapp2.RequestHandler):
 
         if usr:
             url_usr = users.create_logout_url("/")
-            chats = Chat.query().order(-Chat.usuario1)
+            chats = Chat.query(ndb.OR(Chat.usuario1 == usr.email(), Chat.usuario2 == usr.email())).order(-Chat.usuario1)
 
             valores_plantilla = {
                 "chats": chats,
