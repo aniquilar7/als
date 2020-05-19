@@ -1,5 +1,6 @@
 import webapp2
 from webapp2_extras import jinja2
+import time
 
 from webapp2_extras.users import users
 from model.mensaje import Mensaje
@@ -14,6 +15,7 @@ class ListaMensajesHandler(webapp2.RequestHandler):
             if mensaje.usuario != users.get_current_user().email():
                 mensaje.estado = True
                 mensaje.put()
+        time.sleep(1)
 
         if chat.usuario1 == users.get_current_user().email():
             usr = chat.usuario2
