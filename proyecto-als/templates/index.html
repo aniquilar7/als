@@ -2,8 +2,8 @@
 
 {% block contenido %}
     {% if usr %}
-    Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
+Puedes <a href="{{ url_usr }}"><i class="fas fa-sign-out-alt"></i>cerrar sesión</a> para salir de esta app.
     {% else %}
-    !Haz <a href="{{ url_usr }}">login</a> para utilizar esta app!
+    ¡Puedes <a href="{{ url_usr }}"><i class="fas fa-sign-in-alt"></i>iniciar sesión</a> para utilizar esta aplicación totalmente gratis!
     {% endif %}
 {% endblock %}

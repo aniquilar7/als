@@ -1,17 +1,16 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-    Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
-<h1>Chats</h1>
+Puedes <a href="{{ url_usr }}"><i class="fas fa-sign-out-alt"></i>cerrar sesión</a> para salir de esta app.
+<h1>Conversaciones</h1>
+<a href="/chats/nuevo"><i class="fas fa-plus"></i>Nuevo chat</a></br>
 {% if chats.count() > 0 %}
      {% for chat in chats %}
-        <a href="/mensajes/lista?chat={{ chat.key.urlsafe() }}">Ver chat</a>
-        <a href="/chats/elimina?id={{ chat.key.urlsafe() }}"> Elimina chat</a>
         {% include "entrada_chats.html" %}
+        <a href="/chats/elimina?id={{ chat.key.urlsafe() }}"><i class="fas fa-trash-alt"></i> </a></br>
     {% endfor %}
 {% else %}
-    <p><b>No existen chats actualmente.</b></p>
+    <p><b>No existen conversaciones actualmente.</b></p>
 {% endif %}
 
-<a href="/chats/nuevo">Nuevo chat</a>
 {% endblock %}

@@ -1,9 +1,9 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-<h1>Nuevo chat</h1>
+<h1>Nueva conversación</h1>
 <form id="frmNuevoChat" method="post" action="/chats/nuevo" onsubmit="return check()">
-    <label for="edUsuario">Indica el email del otro usuario: </label>
+    <label for="edUsuario">Indica el email del usuario con el que quieres comenzar un chat: </label>
     <input type="text" id="edUsuario" name="edUsuario"/>
 
     <input type="submit" value="Confirmar">

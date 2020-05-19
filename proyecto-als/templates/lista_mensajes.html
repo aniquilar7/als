@@ -1,23 +1,22 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-    Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
-<h1>Mensajes con {{ usr }}</h1>
+Puedes <a href="{{ url_usr }}"><i class="fas fa-sign-out-alt"></i>cerrar sesión</a> para salir de esta app.
+<h1>Conversación con {{ usr }}</h1>
 
 {% if mensajes.count() > 0 %}
      {% for mensaje in mensajes %}
-        <a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}&amp;chat={{ chat.key.urlsafe() }}"> Elimina mensaje</a>
-        {% include "entrada_mensaje.html" %}
+        {% include "entrada_mensaje.html" %}</br>
     {% endfor %}
 {% else %}
-    <p><b>Este chat está vacío.</b></p>
+    <p><b>Aún no hay ningún mensaje. Puedes mandar uno en el recuadro justo debajo.</b></p>
 {% endif %}
 
 <form id="frmNuevoMensaje" method="post" action="/mensajes/nuevo?chat={{ chat.key.urlsafe() }}" onsubmit="return check()">
     <label for="edMensaje"></label>
     <input type="text" id="edMensaje" name="edMensaje" placeholder="Escriba aquí"/>
 
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar mensaje">
 </form>
 
 <script>

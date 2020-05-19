@@ -1,1 +1,1 @@
-<b>{{ mensaje.texto }} - Fecha: {{ mensaje.fecha }} - Estado: {{ mensaje.estado }}</b></br>
+<b>{{ mensaje.texto }} - Fecha: {{ mensaje.fecha }} {% if mensaje.estado==True %}<i class="far fa-check-circle"></i>{% endif %}<a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}&amp;chat={{ chat.key.urlsafe() }}"> <i class="fas fa-trash-alt"></i> </a></b>
