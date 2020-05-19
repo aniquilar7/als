@@ -2,7 +2,7 @@
 
 {% block contenido %}
     Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
-<h1>Mensajes con {{ chat.usuario2 }}</h1>
+<h1>Mensajes con {{ usr }}</h1>
 
 {% if mensajes.count() > 0 %}
      {% for mensaje in mensajes %}

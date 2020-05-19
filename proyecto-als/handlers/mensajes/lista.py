@@ -10,10 +10,21 @@ class ListaMensajesHandler(webapp2.RequestHandler):
 
         chat, mensajes = Mensaje.recupera_para(self.request)
 
+        for mensaje in mensajes:
+            if mensaje.usuario != users.get_current_user().email():
+                mensaje.estado = True
+                mensaje.put()
+
+        if chat.usuario1 == users.get_current_user().email():
+            usr = chat.usuario2
+        elif chat.usuario2 == users.get_current_user().email():
+            usr = chat.usuario1
+
         valores_plantilla = {
             "mensajes": mensajes,
             "chat": chat,
-            "url_usr": url_usr
+            "url_usr": url_usr,
+            "usr": usr
         }
 
         jinja = jinja2.get_jinja2(app=self.app)

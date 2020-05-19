@@ -9,6 +9,7 @@ class Mensaje(ndb.Model):
     fecha = ndb.DateTimeProperty(auto_now_add=True, indexed=True)
     texto = ndb.StringProperty(required=True)
     estado = ndb.BooleanProperty(required=True)
+    usuario = ndb.StringProperty(required=True)
     clave_chat = ndb.KeyProperty(kind=Chat)
 
     @staticmethod
