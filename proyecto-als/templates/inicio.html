@@ -1,0 +1,16 @@
+{% extends "esqueleto.html" %}
+
+{% block contenido %}
+<h1>Chats</h1>
+{% if chats.count() > 0 %}
+     {% for chat in chats %}
+        <a href="/mensajes/lista?chat={{ chat.key.urlsafe() }}">Ver chat</a>
+        <a href="/chats/elimina?id={{ chat.key.urlsafe() }}"> Elimina chat</a>
+        {% include "entrada_chats.html" %}
+    {% endfor %}
+{% else %}
+    <p><b>No existen chats actualmente.</b></p>
+{% endif %}
+
+<a href="/chats/nuevo">Nuevo chat</a>
+{% endblock %}

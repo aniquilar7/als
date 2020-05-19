@@ -16,28 +16,29 @@
 #
 import webapp2
 from webapp2_extras import jinja2
-
 from webapp2_extras.users import users
 
+from model.chat import Chat
 
-class MainHandler(webapp2.RequestHandler):
+class InicioHandler(webapp2.RequestHandler):
     def get(self):
         usr = users.get_current_user()
 
         if usr:
             url_usr = users.create_logout_url("/")
+            chats = Chat.query().order(-Chat.usuario1)
+
+            valores_plantilla = {
+                "chats": chats,
+                "url_usr": url_usr
+            }
+
+            jinja = jinja2.get_jinja2(app=self.app)
+            self.response.write(jinja.render_template("inicio.html",
+                                **valores_plantilla))
         else:
-            url_usr = users.create_login_url("/inicio")
-
-        valores_plantilla = {
-            "usr": usr,
-            "url_usr": url_usr
-        }
-
-        jinja = jinja2.get_jinja2(app=self.app)
-        self.response.write(jinja.render_template("index.html",
-                            **valores_plantilla))
+            return self.redirect("/")
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/inicio', InicioHandler)
 ], debug=True)

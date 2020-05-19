@@ -21,12 +21,12 @@ class NuevoChatHandler(webapp2.RequestHandler):
         usuario = self.request.get("edUsuario", "")
 
         if not(usuario):
-            return self.redirect("/")
+            return self.redirect("/inicio")
         else:
             chat = Chat(usuario1="Yo", usuario2=usuario)
             chat.put()
             time.sleep(1)
-            return self.redirect("/")
+            return self.redirect("/inicio")
 
 app = webapp2.WSGIApplication([
     ('/chats/nuevo', NuevoChatHandler)

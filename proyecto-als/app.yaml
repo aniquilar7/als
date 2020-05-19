@@ -12,20 +12,29 @@ handlers:
 - url: /
   script: handlers.main.app
 
+- url: /inicio
+  script: handlers.inicio.app
+  login: required
+
 - url: /chats/nuevo
   script: handlers.chats.nuevo.app
+  login: required
 
 - url: /chats/elimina
   script: handlers.chats.elimina.app
+  login: required
 
 - url: /mensajes/elimina
   script: handlers.mensajes.elimina.app
+  login: required
 
 - url: /mensajes/lista
   script: handlers.mensajes.lista.app
+  login: required
 
 - url: /mensajes/nuevo
   script: handlers.mensajes.nuevo.app
+  login: required
 
 libraries:
 - name: webapp2
