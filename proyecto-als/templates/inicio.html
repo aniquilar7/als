@@ -3,7 +3,7 @@
 {% block contenido %}
 Puedes <a href="{{ url_usr }}"><i class="fas fa-sign-out-alt"></i>cerrar sesión</a> para salir de esta app.
 <h1>Conversaciones</h1>
-<a href="/chats/nuevo"><i class="fas fa-plus"></i>Nuevo chat</a></br>
+<a href="/chats/nuevo"><button type="button" class="btn btn-warning"><i class="fas fa-plus"></i>Nuevo chat</button></a></br>
 {% if chats.count() > 0 %}
      {% for chat in chats %}
         {% include "entrada_chats.html" %}

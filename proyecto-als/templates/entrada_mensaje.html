@@ -1,1 +1,9 @@
-<b>{{ mensaje.texto }} - Fecha: {{ mensaje.fecha }} {% if mensaje.estado==True %}<i class="far fa-check-circle"></i>{% endif %}<a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}&amp;chat={{ chat.key.urlsafe() }}"> <i class="fas fa-trash-alt"></i> </a></b>
+<b>{{ mensaje.texto }} {% if mensaje.estado==True %}<i class="far fa-check-circle"></i>{% endif %}
+    <div style="display: inline" class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <a href="/mensajes/elimina?id={{ mensaje.key.urlsafe() }}&amp;chat={{ chat.key.urlsafe() }}"> <i class="fas fa-trash-alt"></i> Eliminar mensaje.</a>
+        Fecha del mensaje: {{ mensaje.fecha }}
+    </div>
+    </div>
+</b>
