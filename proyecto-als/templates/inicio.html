@@ -1,6 +1,7 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
+    Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
 <h1>Chats</h1>
 {% if chats.count() > 0 %}
      {% for chat in chats %}

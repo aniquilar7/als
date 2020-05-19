@@ -1,5 +1,9 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-
+    {% if usr %}
+    Haz <a href="{{ url_usr }}">logout</a> para salir de esta app.
+    {% else %}
+    !Haz <a href="{{ url_usr }}">login</a> para utilizar esta app!
+    {% endif %}
 {% endblock %}
